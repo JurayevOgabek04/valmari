@@ -1,0 +1,146 @@
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.header-top__tel{
+    position: relative;
+    margin-right: 58px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 26px;
+    color: #424242;
+
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/tel.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        left: -35px;
+    }
+
+}
+
+.massenjer__link{
+    text-decoration: none;
+}
+
+.massenjer__link:last-child{
+    margin-left: 26px;
+}
+.massenjer{
+    color: #55A630;
+}
+
+.line{
+    
+    border-top: 1px solid rgba(85, 166, 48, 0.5);
+}
+
+// header nav
+
+
+.header-nav__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.header-nav__link{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #424242;
+}
+
+// header mobile
+
+.header-mobile{
+    display: none;
+}
+
+.hamburger-btn{
+    background-color: transparent;
+    border: none;
+    color: #55A630;
+    
+}
+
+.header-mobile__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header-mobile__tel{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #424242;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/tel.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 18px;
+        height: 18px;
+        left: -35px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .header-top,
+    .header-nav{
+        display: none;
+    }
+
+    .header-mobile{
+        display: flex;
+        margin: 14px 0;
+    }
+
+   
+}
+
+
+
+
+@media only screen and (max-width: 480px){
+    .header-mobile__logo{
+        width: 45px;
+        height: 46px;
+    }
+
+    .hamburger-btn{
+        width: 29px;
+        height: 14px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .header-mobile__tel{
+        display: none;
+    }
+}
